@@ -118,7 +118,7 @@ if __name__ == '__main__':
         confidence.append(probs[e, i])
     print('Condifence: {}'.format([np.round(c, 3) for c in confidence]))
 
-    save_dir = 'predicted_frames'
+    save_dir = 'predicted_frames_for_' + args.path  #added _for_' + args..path
     os.makedirs(save_dir, exist_ok=True)
 
     for i, e in enumerate(events):
