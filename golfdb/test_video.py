@@ -120,7 +120,7 @@ if __name__ == '__main__':
 
     # save_dir = 'predicted_frames'
     base_name = os.path.splitext(os.path.basename(args.path))[0]
-    save_dir = f'predicted_frames_for_{base_name}'
+    save_dir = 'predicted_frames_for_' + base_name
     os.makedirs(save_dir, exist_ok=True)
 
     for i, e in enumerate(events):
